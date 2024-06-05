@@ -9,7 +9,7 @@ export default function Movie(props) {
             <p>{ props.item.title}</p>
             <span>
                 {stars}
-                <img src="./delete.png" alt="delete-button" onClick={() => props.removeMovie(props.item.id)} width="40px" />
+                <img src="./delete.png" alt="delete-button" className="delete-btn" onClick={() => props.removeMovie(props.item.id)} />
             </span>
         </li>
     )
